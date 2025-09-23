@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Estudiantes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eceff1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #1f1f1f;
+      padding: 35px;
+      border-radius: 15px;
+      width: 350px;
+      color: white;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #00c46b;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: #2f2f2f;
+      color: white;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-registrar {
+      background: #00c46b;
+      color: white;
+    }
+
+    .btn-registrar:hover {
+      background: #00a85a;
+    }
+
+    .btn-ver {
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .btn-ver:hover {
+      background: #c7c7c7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registro de Estudiantes</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre del Estudiante</label>
+        <input type="text" id="nombre" placeholder="Ingresa el nombre">
+      </div>
+
+      <div class="form-group">
+        <label for="carrera">Carrera</label>
+        <input type="text" id="carrera" placeholder="Ingresa la carrera">
+      </div>
+
+      <div class="form-group">
+        <label for="semestre">Semestre</label>
+        <input type="number" id="semestre" min="1" max="12" placeholder="Ej. 5">
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="btn btn-registrar">Registrar</button>
+        <button type="button" class="btn btn-ver">Ver estudiantes</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
