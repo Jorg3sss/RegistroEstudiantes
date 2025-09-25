@@ -75,11 +75,13 @@
 </head>
 <body>
 
+  <div class="Error"></div> 
+
   <div class="form-container">
     <h2>Registro de Estudiantes</h2>
 
 
-    <form action="registrar.php" method="POST">
+    <form action="./src/registrar.php" method="POST">
       <div class="form-group">
         <label for="nombre">Nombre del Estudiante</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre" required>
@@ -102,7 +104,7 @@
 
       <div class="btn-group">
         <button type="submit" class="btn btn-registrar">Registrar</button>
-        <button type="button" class="btn btn-ver" onclick="window.location.href='ver_estudiantes.php'">Ver estudiantes</button>
+        <button type="button" class="btn btn-ver" onclick="window.location.href='admin.html'">Ver estudiantes</button>
       </div>
     </form>
   </div>
