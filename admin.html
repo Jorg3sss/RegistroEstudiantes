@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sesion admin</title>
+    </head>
+    <body>
+        <h1>Ingresa tu usuario admin</h1>
+        <form action="./src/verificar_admin.php" method="POST">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingresa el usuario" required>
+            <label for="usuario">Contraseña</label>
+            <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa la contraseña" required>
+            <button type="submit" class="btn btn-registrar">Iniciar sesión</button>
+        </form>
+    </body>
+</html>
