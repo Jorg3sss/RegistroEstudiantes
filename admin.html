@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sesion admin</title>
-    </head>
-    <body>
-        <h1>Ingresa tu usuario admin</h1>
-        <form action="./src/verificar_admin.php" method="POST">
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Ingresa el usuario" required>
-            <label for="usuario">Contraseña</label>
-            <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa la contraseña" required>
-            <button type="submit" class="btn btn-registrar">Iniciar sesión</button>
-        </form>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión Admin</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eceff1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #1f1f1f;
+      padding: 35px;
+      border-radius: 15px;
+      width: 350px;
+      color: white;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+    }
+
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: #00c46b;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: #2f2f2f;
+      color: white;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+      background: #00c46b;
+      color: white;
+    }
+
+    .btn:hover {
+      background: #00a85a;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Ingresa tu usuario admin</h1>
+    <form action="./src/verificar_admin.php" method="POST">
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa el usuario" required>
+      </div>
+      <div class="form-group">
+        <label for="Contraseña">Contraseña</label>
+        <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingresa la contraseña" required>
+      </div>
+      <button type="submit" class="btn">Iniciar sesión</button>
+    </form>
+  </div>
+</body>
 </html>
